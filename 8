@@ -110,14 +110,12 @@
     c = (abcd / 10) % 10;
     d = abcd % 10;
     
-    a = a * ((a % 2) - 1);
-    b = b * ((b % 2) - 1);
-    c = c * ((c % 2) - 1);
-    d = d * ((d % 2) - 1);
+    a = a * (1 - (a % 2));
+    b = b * (1 - (b % 2));
+    c = c * (1 - (c % 2));
+    d = d * (1 - (d % 2));
     
-    sumOfOdd = a + b + c + d;
-    sumOffOdd = sumOffOdd * sumOffOdd;
-    
+    sumOfOdd = a + b + c + d;    
 }
 
 
