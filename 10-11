@@ -1,0 +1,226 @@
+/*
+    3. მოცემულია 3 რიცხვი. ვიპოვოთ მაქსიმუმი.
+*/
+
+{
+    int n1;
+    int n2;
+    int n3;
+    
+    n1 = 2;
+    n2 = 4;
+    n3 = 1;
+    
+    int max;
+    
+    if (n1 > n2)
+    {
+        max = n1;
+    }
+    else
+    {
+    }
+    if ( n1 < n3 )
+    {
+        max = n3;
+    }
+}
+
+
+
+
+
+
+/*
+    1. მოცემულია ორი წერთილის კოორდინატები სიბრტყეზე. 
+    დავადგინოთ ორივე წერტილი არის თუ არა ერთი და იგივე სააკორდინატო მეოთხედში.
+*/
+
+{
+    int x1;
+    int y1;
+    int x2;
+    int y2;
+    
+    x1 = 2;
+    y1 = 4;
+    x2 = 9;
+    y2 = 7;
+    
+    int signX1;
+    int signX2;
+    int signY1;
+    int signY2;
+    
+    // checking if coordinates are positive or not
+ 
+    if (x1 > 0) 
+    {
+        signX1 = 1;
+    }
+    else 
+    {
+        signX1 = 0;
+    }
+    
+    
+    if (x2 > 0) 
+    {
+        signX2 = 1;
+    }
+    else 
+    {
+        signX2 = 0;
+    }
+    
+    
+    
+    if (y1 > 0) 
+    {
+        signY1 = 1;
+    }
+    else 
+    {
+        signY1 = 0;
+    }
+    
+      
+    
+    if (y2 > 0) 
+    {
+        signY2 = 1;
+    }
+    else 
+    {
+        signY2 = 0;
+    }
+    
+    // checking if coordinates are in the same quarter
+    
+    bool result;
+    
+    if (signX1 == signX2 && signY1 == sign Y2)
+    {
+        result = true;
+    }
+    else 
+    {
+        result = false;
+    }
+    
+}
+
+
+
+/*
+    2. მოცემულია 3 ნატურალური რიცხვი a, b, c. 
+    დავადგინოთ არსებუბოს თუ არა სამკუთხედი მსგავსი გვერდებით.
+*/
+
+{
+    int a;
+    int b;
+    int c;
+    
+    a = 3;
+    b = 4;
+    c = 5;
+    
+    bool triangleExists;
+    
+    if (a < b + c && b < a + c && c < a + b)
+    {
+        triangleExists = true;
+    }
+    else
+    {
+        triangleExists = false;
+    }
+}
+
+
+
+
+/*
+  წარმოვიდგინოთ ჭადრაკის დაფა. ლაზიერი -L დგას გარკვეულ ადგილას
+  დაფაზე, მას მხოლოდ შეუძლია დიაგონალზე
+  მეორე ფიგურა -P დგას გარკვეულ ადგილას.
+  შეუძლია თუ არა ლაზიერს ერთ სვლაში პაიკის მოკვლა?
+
+*/
+
+{
+    int L1;
+    int L2;
+    
+    L1 = 5;
+    L2 = 5;
+    
+    int P1;
+    int P2;
+    
+    P1 = 3;
+    p2 = 7;
+    
+    int subL1P1;
+    int subL2P2;
+    
+    subL1P1 = L1 - P1;
+    subL2P2 = L2 - P2;
+    
+    // converting substracted numbers into positive
+    
+    if (subL1P1 < 0)
+    {
+        subL1P1 = subL1P1 * -1;
+    }
+    else 
+    {
+    }
+    
+   
+    if (subL2P2 < 0)
+    {
+        subL2P2 = subL2P2 * -1;
+    }
+    else 
+    {
+    }
+    
+    bool canKill;
+    
+    if (subL1P1 == subL2P2)
+    {
+        canKill = true;
+    }
+    else 
+    {
+        canKill = false;
+    }
+    
+       
+}
+
+
+
+
+/*
+    5. კვადრატის ფორმის დაფაზე ყოველ კიდის უჯრაში მოათავსეს თითო მონეტა.
+    შეიძლება თუ არა აღმოჩნდეს რომ ზუსტად k რაოდენობის მონეტა იყო მოთავსებული დაფაზე?
+*/
+
+{
+    int k;
+    k = 13;
+    
+    bool result;
+    
+    if ((k + 4) % 4 == 0)
+    {
+        result = true;
+    }
+    else 
+    {
+        result = false;
+    }
+}
